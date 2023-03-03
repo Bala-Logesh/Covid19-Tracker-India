@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #eeeeee;
+  color: var(--bg-color);
+  transition: all 0.2s ease-in-out;
+  width: 300px;
+  padding: 1.75rem 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
