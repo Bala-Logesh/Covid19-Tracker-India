@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { TotalCasesComponent } from './total-cases/total-cases.component';
 
-const routes: Routes = [{ path: '', component: HomeComponent }];
+const routes: Routes = [
+  { path: 'totalCases', component: TotalCasesComponent },
+  { path: '', component: HomeComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -10,4 +14,4 @@ const routes: Routes = [{ path: '', component: HomeComponent }];
 })
 export class AppRoutingModule {}
 
-export const routingComponent = [HomeComponent];
+export const routingComponent = [HomeComponent, TotalCasesComponent];
