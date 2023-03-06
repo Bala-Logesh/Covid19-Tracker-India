@@ -12,4 +12,4 @@ Data is sourced from **[covid19api](https://covid19api.com)**
 
 <br/><br/>
 
-Old Github Repository: **[Covid19-India-v1](https://github.com/Bala-Logesh/Covid19-India-v1)**
+Old Github Repository: **[Covid19-Tracker-India-v1](https://github.com/Bala-Logesh/Covid19-Tracker-India-v1)**
