@@ -4,11 +4,12 @@ import { DateWiseData } from '../models/date-wise-data';
 import { CoronaDataService } from '../services/corona-data.service';
 
 @Component({
-  selector: 'app-total-cases',
-  templateUrl: './total-cases.component.html',
-  styleUrls: ['./total-cases.component.css'],
+  selector: 'app-death-cases',
+  templateUrl: './death-cases.component.html',
+  styleUrls: ['./death-cases.component.css'],
 })
-export class TotalCasesComponent {
+
+export class DeathCasesComponent {
   chart: any;
   data!: DateWiseData[];
 
@@ -22,17 +23,16 @@ export class TotalCasesComponent {
   }
 
   createChart() {
-    this.chart = new Chart('TotalCases', {
-      type: 'bar', //this denotes tha type of chart
+    this.chart = new Chart('DeathCases', {
+      type: 'bar',
 
       data: {
-        // values on X-Axis
-        labels: this.data.map(day => day.Date),
+        labels: this.data.map((day) => day.Date),
         datasets: [
           {
-            label: 'Total Cases',
-            data: this.data.map(day => day.Confirmed),
-            backgroundColor: '#1976d2',
+            label: 'Death Cases',
+            data: this.data.map((day) => day.Deaths),
+            backgroundColor: 'red',
           },
         ],
       },
