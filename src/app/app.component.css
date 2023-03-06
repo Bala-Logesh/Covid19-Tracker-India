@@ -29,3 +29,12 @@ footer a {
 footer a:is(:hover, :focus) {
   text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
